@@ -3,7 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 #inhibit_all_warnings!
 
-workspace 'iSickbeard.xcworkspace'
+workspace 'iSickbeard/iSickbeard.xcworkspace'
 xcodeproj 'iSickbeard/iSickbeard.xcodeproj'
 
 target :iSickbeard do
