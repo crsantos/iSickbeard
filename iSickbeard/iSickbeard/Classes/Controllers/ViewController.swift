@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let server1 = Server(name: "Sickbeard1", address: "192.168.1.70");
+        println(server1)
+        
     }
 
     override func didReceiveMemoryWarning() {
