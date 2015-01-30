@@ -15,6 +15,7 @@
 		DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */; };
 		DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */; };
 		DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBD1A7C22AF003DCCBD /* Server.swift */; };
+		DDAFFEC01A7C3DD2003DCCBD /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DDAFFEBD1A7C22AF003DCCBD /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Server.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				DDAFFEBD1A7C22AF003DCCBD /* Server.swift */,
+				DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
 				DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */,
+				DDAFFEC01A7C3DD2003DCCBD /* Show.swift in Sources */,
 				DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
