@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
+		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
+		DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE9B1A7C0679003DCCBD /* LaunchScreen.xib */; };
+		DDAFFEA91A7C067A003DCCBD /* iSickbeardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */; };
+		DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */; };
+		DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDAFFEA31A7C067A003DCCBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAFFE851A7C0679003DCCBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDAFFE8C1A7C0679003DCCBD;
+			remoteInfo = iSickbeard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSickbeard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAFFE911A7C0679003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAFFE971A7C0679003DCCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDAFFE991A7C0679003DCCBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDAFFE9C1A7C0679003DCCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DDAFFEA21A7C067A003DCCBD /* iSickbeardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSickbeardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAFFEA71A7C067A003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSickbeardTests.swift; sourceTree = "<group>"; };
+		DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDAFFE8A1A7C0679003DCCBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDAFFE9F1A7C067A003DCCBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDAFFE841A7C0679003DCCBD = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEBC1A7C141A003DCCBD /* LauchScreen */,
+				DDAFFE8F1A7C0679003DCCBD /* iSickbeard */,
+				DDAFFEA51A7C067A003DCCBD /* iSickbeardTests */,
+				DDAFFE8E1A7C0679003DCCBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDAFFE8E1A7C0679003DCCBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */,
+				DDAFFEA21A7C067A003DCCBD /* iSickbeardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDAFFE8F1A7C0679003DCCBD /* iSickbeard */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEB21A7C1210003DCCBD /* AppDelegate */,
+				DDAFFEB31A7C1210003DCCBD /* Classes */,
+				DDAFFE961A7C0679003DCCBD /* Main.storyboard */,
+				DDAFFE991A7C0679003DCCBD /* Images.xcassets */,
+				DDAFFE9B1A7C0679003DCCBD /* LaunchScreen.xib */,
+				DDAFFE901A7C0679003DCCBD /* Supporting Files */,
+			);
+			path = iSickbeard;
+			sourceTree = "<group>";
+		};
+		DDAFFE901A7C0679003DCCBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFE911A7C0679003DCCBD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDAFFEA51A7C067A003DCCBD /* iSickbeardTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */,
+				DDAFFEA61A7C067A003DCCBD /* Supporting Files */,
+			);
+			path = iSickbeardTests;
+			sourceTree = "<group>";
+		};
+		DDAFFEA61A7C067A003DCCBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEA71A7C067A003DCCBD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDAFFEB21A7C1210003DCCBD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DDAFFEB31A7C1210003DCCBD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEB41A7C1210003DCCBD /* Controllers */,
+				DDAFFEB51A7C1210003DCCBD /* Datasources */,
+				DDAFFEB61A7C1210003DCCBD /* Models */,
+				DDAFFEB71A7C1210003DCCBD /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDAFFEB41A7C1210003DCCBD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDAFFEB51A7C1210003DCCBD /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		DDAFFEB61A7C1210003DCCBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDAFFEB71A7C1210003DCCBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDAFFEBC1A7C141A003DCCBD /* LauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LauchScreen;
+			path = iSickbeard/LauchScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDAFFE8C1A7C0679003DCCBD /* iSickbeard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAFFEAC1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeard" */;
+			buildPhases = (
+				DDAFFE891A7C0679003DCCBD /* Sources */,
+				DDAFFE8A1A7C0679003DCCBD /* Frameworks */,
+				DDAFFE8B1A7C0679003DCCBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSickbeard;
+			productName = iSickbeard;
+			productReference = DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDAFFEA11A7C067A003DCCBD /* iSickbeardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAFFEAF1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeardTests" */;
+			buildPhases = (
+				DDAFFE9E1A7C067A003DCCBD /* Sources */,
+				DDAFFE9F1A7C067A003DCCBD /* Frameworks */,
+				DDAFFEA01A7C067A003DCCBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDAFFEA41A7C067A003DCCBD /* PBXTargetDependency */,
+			);
+			name = iSickbeardTests;
+			productName = iSickbeardTests;
+			productReference = DDAFFEA21A7C067A003DCCBD /* iSickbeardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDAFFE851A7C0679003DCCBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Carlos Santos";
+				TargetAttributes = {
+					DDAFFE8C1A7C0679003DCCBD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DDAFFEA11A7C067A003DCCBD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DDAFFE8C1A7C0679003DCCBD;
+					};
+				};
+			};
+			buildConfigurationList = DDAFFE881A7C0679003DCCBD /* Build configuration list for PBXProject "iSickbeard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDAFFE841A7C0679003DCCBD;
+			productRefGroup = DDAFFE8E1A7C0679003DCCBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDAFFE8C1A7C0679003DCCBD /* iSickbeard */,
+				DDAFFEA11A7C067A003DCCBD /* iSickbeardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDAFFE8B1A7C0679003DCCBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */,
+				DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */,
+				DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDAFFEA01A7C067A003DCCBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDAFFE891A7C0679003DCCBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
+				DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDAFFE9E1A7C067A003DCCBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAFFEA91A7C067A003DCCBD /* iSickbeardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDAFFEA41A7C067A003DCCBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDAFFE8C1A7C0679003DCCBD /* iSickbeard */;
+			targetProxy = DDAFFEA31A7C067A003DCCBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDAFFE961A7C0679003DCCBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDAFFE971A7C0679003DCCBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDAFFE9B1A7C0679003DCCBD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDAFFE9C1A7C0679003DCCBD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDAFFEAA1A7C067A003DCCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDAFFEAB1A7C067A003DCCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDAFFEAD1A7C067A003DCCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iSickbeard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDAFFEAE1A7C067A003DCCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iSickbeard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDAFFEB01A7C067A003DCCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iSickbeardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSickbeard.app/iSickbeard";
+			};
+			name = Debug;
+		};
+		DDAFFEB11A7C067A003DCCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iSickbeardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSickbeard.app/iSickbeard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDAFFE881A7C0679003DCCBD /* Build configuration list for PBXProject "iSickbeard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDAFFEAA1A7C067A003DCCBD /* Debug */,
+				DDAFFEAB1A7C067A003DCCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDAFFEAC1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDAFFEAD1A7C067A003DCCBD /* Debug */,
+				DDAFFEAE1A7C067A003DCCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDAFFEAF1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDAFFEB01A7C067A003DCCBD /* Debug */,
+				DDAFFEB11A7C067A003DCCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDAFFE851A7C0679003DCCBD /* Project object */;
+}
