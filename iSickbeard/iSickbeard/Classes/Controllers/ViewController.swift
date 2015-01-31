@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let server1 = Server(name: "Sickbeard1", address: "192.168.1.70");
+        let server1 = Server(name: "Sickbeard1", address: "192.168.1.70", apiKey:"GuiGUSOIGOAGOgoAGOy9a(TDagd0=");
         println(server1)
         
     }
