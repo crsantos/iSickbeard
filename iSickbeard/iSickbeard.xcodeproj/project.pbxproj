@@ -441,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */;
 			buildSettings = {
+				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).adhoc";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = iSickbeard/Info.plist;
@@ -549,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */;
 			buildSettings = {
+				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).debug";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */;
 			buildSettings = {
+				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = iSickbeard/Info.plist;
