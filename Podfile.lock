@@ -1,10 +1,13 @@
 PODS:
   - Alamofire (1.1.4)
+  - SwiftColors (0.1.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 1.1)
+  - Alamofire (= 1.1.4)
+  - SwiftColors (= 0.1.1)
 
 SPEC CHECKSUMS:
   Alamofire: 524225da382071ee3e6d0badd0ee4b4dc36740de
+  SwiftColors: 01e039a938f198d6f240dcf9ca3c9256a0dc0d34
 
 COCOAPODS: 0.36.0.beta.2
