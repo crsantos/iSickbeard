@@ -13,19 +13,21 @@ class Server: Printable  {
     
     var name:String
     var address:String
+    var apiKey:String
     
     // MARK: - Lifecycle
     
-    init(name:String, address:String){
+    init(name:String, address:String, apiKey:String){
 
-        self.name     = name
+        self.name    = name
         self.address = address
+        self.apiKey  = apiKey;
     }
     
     // MARK: - Public
     
     var description : String {
         
-        return "[ServerName: \(self.name), Host: \(self.address)]"
+        return "[ServerName: \(self.name), Host: \(self.address), APIKey: \(self.apiKey)]"
     }
 }
