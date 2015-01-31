@@ -10,18 +10,22 @@ class Show: Printable  {
     
     var name:String
     
+    var quality:QualitySetting
+    
+    
     // MARK: - Lifecycle
     
-    init(name:String){
+    init(name:String, quality:QualitySetting){
         
-        self.name     = name
+        self.name    = name
+        self.quality = quality
     }
     
     // MARK: - Public
     
     var description : String {
         
-        return "[Show name: \(self.name)]"
+        return "[Show name: \(self.name), quality: \(self.quality.rawValue)]"
     }
 }
 

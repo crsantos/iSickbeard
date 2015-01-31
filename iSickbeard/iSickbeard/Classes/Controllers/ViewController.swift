@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         let server1 = Server(name: "Sickbeard1", address: "192.168.1.70", apiKey:"GuiGUSOIGOAGOgoAGOy9a(TDagd0=");
         println(server1)
         
+        let show1 = Show(name:"Lost", quality:.QualitySettingNA)
+        println(show1);
+        
     }
 
     override func didReceiveMemoryWarning() {
