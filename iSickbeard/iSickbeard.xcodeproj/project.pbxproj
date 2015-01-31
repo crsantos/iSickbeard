@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.debug.xcconfig"; sourceTree = "<group>"; };
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
 		DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSickbeard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAFFE911A7C0679003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */,
+				DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */,
 				E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */,
 			);
 			name = Pods;
@@ -437,7 +439,7 @@
 		};
 		DD410F4E1A7CF0FB00F98B08 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */;
+			baseConfigurationReference = DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iSickbeard/Info.plist;
