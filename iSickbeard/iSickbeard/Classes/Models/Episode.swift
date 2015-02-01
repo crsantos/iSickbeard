@@ -29,6 +29,11 @@ class Episode {
     
     func updateSubtitles(subtitlesString:String) {
         
-        self.subtitles = subtitlesString.componentsSeparatedByString(",")
+        for subtitleCode in subtitlesString.componentsSeparatedByString(","){
+            
+            self.subtitles.append(subtitleCode.trim())
+            
+        }
+        
     }
 }
