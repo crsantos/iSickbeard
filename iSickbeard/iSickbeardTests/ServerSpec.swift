@@ -9,7 +9,7 @@ class ServerSpec: QuickSpec {
             
             describe("as a sickbeard machine") {
                 
-                it("should have loud") {
+                it("should be able to set its properties") {
                     
                     let server = Server(
                         name: "name",
