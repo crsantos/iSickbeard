@@ -1,13 +1,19 @@
 PODS:
   - Alamofire (1.1.4)
+  - Nimble (0.3.0)
+  - Quick (0.2.2)
   - SwiftColors (0.1.1)
 
 DEPENDENCIES:
   - Alamofire (= 1.1.4)
+  - Nimble (= 0.3.0)
+  - Quick (= 0.2.2)
   - SwiftColors (= 0.1.1)
 
 SPEC CHECKSUMS:
   Alamofire: 524225da382071ee3e6d0badd0ee4b4dc36740de
+  Nimble: a4d9d978129e83d73e33b7d8bce57443bd556068
+  Quick: 7b89ff625e72ef931c2a9ef2f25ac3a9d2457763
   SwiftColors: 01e039a938f198d6f240dcf9ca3c9256a0dc0d34
 
 COCOAPODS: 0.36.0.beta.2

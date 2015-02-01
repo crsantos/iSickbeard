@@ -11,5 +11,7 @@ target :iSickbeard do
   pod 'SwiftColors', '0.1.1'
 end
 
-# target :iSickbeardTests, :exclusive => true do
-# end
+target :iSickbeardTests, :exclusive => true do
+  pod 'Quick', '0.2.2'
+  pod 'Nimble', '0.3.0'
+end

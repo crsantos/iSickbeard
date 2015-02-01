@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5368C61ACC1710D6958389 /* Pods_iSickbeardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		91F937BC85D7C62B5EDBC723 /* Pods_iSickbeard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DD3FF4191A7EAE4500941D39 /* ServerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */; };
+		DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBD1A7C22AF003DCCBD /* Server.swift */; };
+		DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */; };
+		DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
 		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
 		DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE9B1A7C0679003DCCBD /* LaunchScreen.xib */; };
-		DDAFFEA91A7C067A003DCCBD /* iSickbeardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */; };
 		DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */; };
 		DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */; };
 		DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBD1A7C22AF003DCCBD /* Server.swift */; };
@@ -41,8 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DEDD08550BD7494A24624D /* Pods-iSickbeardTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		3B137B53C5F25F62E434ACCB /* Pods-iSickbeardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.debug.xcconfig"; sourceTree = "<group>"; };
+		9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSpec.swift; sourceTree = "<group>"; };
 		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
 		DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sickbeard.swift; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
@@ -53,7 +62,6 @@
 		DDAFFE9C1A7C0679003DCCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DDAFFEA21A7C067A003DCCBD /* iSickbeardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSickbeardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAFFEA71A7C067A003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSickbeardTests.swift; sourceTree = "<group>"; };
 		DDAFFEB81A7C1246003DCCBD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDAFFEBA1A7C1268003DCCBD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DDAFFEBD1A7C22AF003DCCBD /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Server.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -94,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5368C61ACC1710D6958389 /* Pods_iSickbeardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +122,7 @@
 				DDB5F73B1A7DA216006F3F3E /* CoreGraphics.framework */,
 				DDB5F7391A7DA210006F3F3E /* AssetsLibrary.framework */,
 				BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */,
+				4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +133,9 @@
 				556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */,
 				DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */,
 				E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */,
+				3B137B53C5F25F62E434ACCB /* Pods-iSickbeardTests.debug.xcconfig */,
+				9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */,
+				18DEDD08550BD7494A24624D /* Pods-iSickbeardTests.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -181,8 +194,8 @@
 		DDAFFEA51A7C067A003DCCBD /* iSickbeardTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDAFFEA81A7C067A003DCCBD /* iSickbeardTests.swift */,
 				DDAFFEA61A7C067A003DCCBD /* Supporting Files */,
+				DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */,
 			);
 			path = iSickbeardTests;
 			sourceTree = "<group>";
@@ -302,9 +315,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDAFFEAF1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeardTests" */;
 			buildPhases = (
+				C078382CC81763AFE65B4F4A /* Check Pods Manifest.lock */,
 				DDAFFE9E1A7C067A003DCCBD /* Sources */,
 				DDAFFE9F1A7C067A003DCCBD /* Frameworks */,
 				DDAFFEA01A7C067A003DCCBD /* Resources */,
+				72F56A355BE2D4B88B56D368 /* Embed Pods Frameworks */,
+				B748ACCD305E62B4C2182A71 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,6 +391,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		72F56A355BE2D4B88B56D368 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B748ACCD305E62B4C2182A71 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C078382CC81763AFE65B4F4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		C9C4BF263CF4121AE0A9EB06 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,7 +515,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDAFFEA91A7C067A003DCCBD /* iSickbeardTests.swift in Sources */,
+				DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */,
+				DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */,
+				DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */,
+				DD3FF4191A7EAE4500941D39 /* ServerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +615,7 @@
 		};
 		DD410F4F1A7CF0FB00F98B08 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DEDD08550BD7494A24624D /* Pods-iSickbeardTests.adhoc.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -683,6 +748,7 @@
 		};
 		DDAFFEB01A7C067A003DCCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B137B53C5F25F62E434ACCB /* Pods-iSickbeardTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -702,6 +768,7 @@
 		};
 		DDAFFEB11A7C067A003DCCBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
