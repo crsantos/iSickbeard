@@ -109,8 +109,8 @@ struct Sickbeard {
         
         case Ping()
         case ShowList()
-        case ShowSeasons(Int)
-        case ShowPoster(Int)
+        case ShowSeasons(Int64)
+        case ShowPoster(Int64)
         
         
         // MARK: HTTP Method
