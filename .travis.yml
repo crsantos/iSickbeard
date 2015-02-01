@@ -1,6 +1,6 @@
 language: objective-c
 before_script:
     - brew update && brew upgrade xctool
-xcode_project: iSickbeard/iSickbeard.xcworkspace
+xcode_workspace: iSickbeard/iSickbeard.xcworkspace
 xcode_scheme: iSickbeardTests
 xcode_sdk: iphonesimulator
