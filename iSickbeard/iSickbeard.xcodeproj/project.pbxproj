@@ -14,6 +14,10 @@
 		DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */; };
 		DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DD3FF41E1A7ED65700941D39 /* ShowSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF41D1A7ED65700941D39 /* ShowSpec.swift */; };
+		DD3FF4201A7ED9A300941D39 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF41F1A7ED9A300941D39 /* Episode.swift */; };
+		DD3FF4211A7ED9A300941D39 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF41F1A7ED9A300941D39 /* Episode.swift */; };
+		DD3FF4231A7EDA7500941D39 /* EpisodeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4221A7EDA7500941D39 /* EpisodeStatus.swift */; };
+		DD3FF4241A7EDA7500941D39 /* EpisodeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4221A7EDA7500941D39 /* EpisodeStatus.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
@@ -54,6 +58,8 @@
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSpec.swift; sourceTree = "<group>"; };
 		DD3FF41D1A7ED65700941D39 /* ShowSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSpec.swift; sourceTree = "<group>"; };
+		DD3FF41F1A7ED9A300941D39 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		DD3FF4221A7EDA7500941D39 /* EpisodeStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeStatus.swift; sourceTree = "<group>"; };
 		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
 		DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sickbeard.swift; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
@@ -252,6 +258,8 @@
 				DDAFFEBD1A7C22AF003DCCBD /* Server.swift */,
 				DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */,
 				DD7AD6371A7CD39400477A48 /* QualitySetting.swift */,
+				DD3FF4221A7EDA7500941D39 /* EpisodeStatus.swift */,
+				DD3FF41F1A7ED9A300941D39 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -507,6 +515,8 @@
 			files = (
 				DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */,
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
+				DD3FF4201A7ED9A300941D39 /* Episode.swift in Sources */,
+				DD3FF4231A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,
 				DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */,
 				DDAFFEC01A7C3DD2003DCCBD /* Show.swift in Sources */,
 				DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */,
@@ -519,6 +529,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */,
+				DD3FF4211A7ED9A300941D39 /* Episode.swift in Sources */,
+				DD3FF4241A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,
 				DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */,
 				DD3FF41E1A7ED65700941D39 /* ShowSpec.swift in Sources */,
 				DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */,
