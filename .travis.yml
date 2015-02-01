@@ -1,7 +1,6 @@
 language: objective-c
 before_script:
-    - gem install cocoapods -v 0.36.0.beta.2
-    - brew update && brew upgrade xctool
+    - gem install cocoapods --pre
 xcode_workspace: iSickbeard/iSickbeard.xcworkspace
 xcode_scheme: Debug
 xcode_sdk: iphonesimulator
