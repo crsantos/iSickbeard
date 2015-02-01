@@ -58,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         sharedHockeyManager.configureWithIdentifier(version)
         sharedHockeyManager.startManager()
         sharedHockeyManager.authenticator.authenticateInstallation()
+        sharedHockeyManager.testIdentifier()
     }
 }
 
