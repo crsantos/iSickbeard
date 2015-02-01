@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		91F937BC85D7C62B5EDBC723 /* Pods_iSickbeard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
 		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
@@ -43,6 +44,7 @@
 		556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.debug.xcconfig"; sourceTree = "<group>"; };
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
+		DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sickbeard.swift; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
 		DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSickbeard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAFFE911A7C0679003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DD6331CF1A7E4E540029E25A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */,
+			);
+			name = Providers;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		DDAFFE841A7C0679003DCCBD = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +209,7 @@
 				DDAFFEB41A7C1210003DCCBD /* Controllers */,
 				DDAFFEB51A7C1210003DCCBD /* Datasources */,
 				DDAFFEB61A7C1210003DCCBD /* Models */,
+				DD6331CF1A7E4E540029E25A /* Providers */,
 				DDAFFEB71A7C1210003DCCBD /* Views */,
 			);
 			path = Classes;
@@ -433,6 +445,7 @@
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
 				DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */,
 				DDAFFEC01A7C3DD2003DCCBD /* Show.swift in Sources */,
+				DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */,
 				DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
