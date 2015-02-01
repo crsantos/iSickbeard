@@ -25,6 +25,64 @@ class ShowSpec: QuickSpec {
                     expect(show.location).to(equal("/"))
                     expect(show.airs).to(equal("Sunday, 8/9Central"))
                 }
+                
+                it("should be convertible from a Dictionary") {
+                    
+                    let dict = [
+                        "airs": "Friday 9:00 PM",
+                        "anime": 0,
+                        "archive_firstmatch": 0,
+                        "cache": [
+                            "banner": 1,
+                            "poster": 1
+                        ],
+                        "dvdorder": 0,
+                        "flatten_folders": 1,
+                        "genre": [
+                            "Science-Fiction"
+                        ],
+                        "indexerid": 272644,
+                        "language": "en",
+                        "location": "/downloads/complete/tvshows/12 Monkeys",
+                        "network": "Syfy",
+                        "next_ep_airdate": "2015-02-06",
+                        "paused": 0,
+                        "quality": "HD",
+                        "quality_details": [
+                            "archive": [],
+                            "initial": [
+                            "hdtv",
+                            "fullhdtv",
+                            "hdwebdl",
+                            "fullhdwebdl",
+                            "hdbluray",
+                            "fullhdbluray"
+                            ]
+                        ],
+                        "rls_ignore_words": [], 
+                        "rls_require_words": [], 
+                        "scene": 0, 
+                        "season_list": [
+                            1, 
+                            0
+                        ], 
+                        "show_name": "12 Monkeys", 
+                        "sports": 0, 
+                        "status": "Continuing", 
+                        "subtitles": 1, 
+                        "tvdbid": 272644, 
+                        "tvrage_id": 36903, 
+                        "tvrage_name": "12 Monkeys"
+                    ]
+                    
+                    let show = Show.convertFromDictionary(dict)
+                    
+                    expect(show!.name).to(equal("12 Monkeys"))
+                    expect(show!.quality).to(equal(QualitySetting.QualitySettingHD))
+                    expect(show!.indexerId).to(equal(272644))
+                    expect(show!.location).to(equal("/downloads/complete/tvshows/12 Monkeys"))
+                    expect(show!.airs).to(equal("Friday 9:00 PM"))
+                }
             }
         }
     }

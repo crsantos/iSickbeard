@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Carlos Santos. All rights reserved.
 //
 
-class Show: Printable  {
+class Show: Printable, DictionaryConvertible  {
     
     var name:String
     var airs:String
@@ -24,6 +24,27 @@ class Show: Printable  {
         self.airs      = airs
         self.location  = location
         self.indexerId = indexerId
+    }
+    
+    // MARK: - DictionaryConvertible methods
+    
+    class func convertFromDictionary(dictionary: Dictionary<String, AnyObject>) -> Show? {
+        
+        var show = Show(
+            
+            name: dictionary["show_name"] as String,
+            indexerId: Int64(dictionary["indexerid"] as Int!),
+            airs: dictionary["airs"] as String,
+            location: dictionary["location"] as String,
+            quality: QualitySetting(rawValue:dictionary["quality"] as String)!
+        )
+        
+        if let status = dictionary["status"] as String{
+            
+            Show
+        }
+        
+        return show
     }
     
     // MARK: - Public
