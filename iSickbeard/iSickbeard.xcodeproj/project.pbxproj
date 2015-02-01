@@ -22,6 +22,8 @@
 		DD3FF42F1A7EE4B900941D39 /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF42E1A7EE4B900941D39 /* StringExtensionsSpec.swift */; };
 		DD3FF4311A7EE67800941D39 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4301A7EE67800941D39 /* String.swift */; };
 		DD3FF4321A7EE67800941D39 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4301A7EE67800941D39 /* String.swift */; };
+		DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
+		DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
@@ -67,6 +69,7 @@
 		DD3FF4251A7EE1A200941D39 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		DD3FF42E1A7EE4B900941D39 /* StringExtensionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsSpec.swift; sourceTree = "<group>"; };
 		DD3FF4301A7EE67800941D39 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryConvertible.swift; sourceTree = "<group>"; };
 		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
 		DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sickbeard.swift; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
@@ -163,6 +166,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DD3FF4331A7EE6D300941D39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		DD6331CF1A7E4E540029E25A /* Providers */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +260,7 @@
 				DDAFFEB51A7C1210003DCCBD /* Datasources */,
 				DD3FF42A1A7EE47D00941D39 /* Extensions */,
 				DDAFFEB61A7C1210003DCCBD /* Models */,
+				DD3FF4331A7EE6D300941D39 /* Protocols */,
 				DD6331CF1A7E4E540029E25A /* Providers */,
 				DDAFFEB71A7C1210003DCCBD /* Views */,
 			);
@@ -532,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */,
+				DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */,
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
 				DD3FF4201A7ED9A300941D39 /* Episode.swift in Sources */,
 				DD3FF4311A7EE67800941D39 /* String.swift in Sources */,
@@ -554,6 +567,7 @@
 				DD3FF4211A7ED9A300941D39 /* Episode.swift in Sources */,
 				DD3FF4241A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,
 				DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */,
+				DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */,
 				DD3FF41E1A7ED65700941D39 /* ShowSpec.swift in Sources */,
 				DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */,
 				DD3FF4191A7EAE4500941D39 /* ServerSpec.swift in Sources */,
