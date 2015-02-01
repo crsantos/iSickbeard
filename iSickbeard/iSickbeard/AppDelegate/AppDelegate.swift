@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupHockeyAppBoilerplate() {
         
         let bundle  = NSBundle.mainBundle()
-        let version = bundle.objectForInfoDictionaryKey("HockeyAppIdentifier") as String!
+        let version = bundle.objectForInfoDictionaryKey("AdhocIdentifier") as String!
         
         var sharedHockeyManager = BITHockeyManager.sharedHockeyManager()
         sharedHockeyManager.configureWithIdentifier(version)
