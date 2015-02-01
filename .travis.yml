@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode611
-#before_script: travis/before_script.sh
+before_script: travis/before_script.sh
 script: travis/script.sh
 rvm: 2.1.3

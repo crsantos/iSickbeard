@@ -1,5 +1,4 @@
 #!/bin/sh
 set -e
 
-brew update
-brew install xctool
+gem install cocoapods --pre
