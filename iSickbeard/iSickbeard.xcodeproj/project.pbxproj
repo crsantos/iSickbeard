@@ -520,7 +520,7 @@
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).adhoc";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -639,7 +639,7 @@
 			buildSettings = {
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).debug";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -658,7 +658,7 @@
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/HockeySDK-iOS/HockeySDK.embeddedframework",
