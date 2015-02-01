@@ -39,10 +39,7 @@ class Show: Printable, DictionaryConvertible  {
             quality: QualitySetting(rawValue:dictionary["quality"] as String)!
         )
         
-        if let status = dictionary["status"] as String{
-            
-            Show
-        }
+        // TODO: let parse the other missing props
         
         return show
     }
