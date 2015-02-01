@@ -25,8 +25,11 @@ class ViewController: UIViewController {
         debugPrintln(server1)
         
         let show1 = Show(
-            name:"Lost",
-            quality:.QualitySettingNA
+            name: "Lost",
+            indexerId: 12314,
+            airs: "Sunday, 8/9Central",
+            location: "/",
+            quality: .QualitySettingNA
         )
         debugPrintln(show1);
         
