@@ -8,7 +8,98 @@
 
 import Alamofire
 
+public enum Status {
+    
+    case Success
+    case Failure
+}
+
+public class Response {
+    
+    public var status: Status     = .Failure
+    public var object: AnyObject? = nil
+    public var error: NSError?    = nil
+}
+
 struct Sickbeard {
+    
+    // MARK: - Properties
+    
+    var server:Server{
+        
+        get {
+            
+            return Router.currentServer!
+        }
+        
+        set (aNewValue) {
+            
+            Router.currentServer = aNewValue
+        }
+    }
+    
+    // MARK: - Lifecycle
+    
+    init(server:Server){
+        
+        self.server = server
+    }
+    
+    // MARK: - API calls
+    
+    func pingServer(completion:(response: Response)->()) -> Request {
+        
+        let request = self.requestBuilder(Sickbeard.Router.Ping(), completion: { (response) -> () in
+            
+            completion(response: response)
+        })
+        
+        return request
+    }
+    
+    func ShowList(completion:(response: Response)->()) -> Request {
+        
+        let request = self.requestBuilder(Sickbeard.Router.ShowList(), completion: { (response) -> () in
+            
+            completion(response: response)
+        })
+        
+        return request
+    }
+    
+    // MARK: - Private methods
+    
+    func requestBuilder(type: Router, completion:(response: Response)->()) -> Request {
+        
+        let request = Alamofire.request(type).validate()
+            .responseJSON { (_, _, json, error) in
+                
+                completion(
+                    
+                    response: self.responseBuilder(json, error: error)
+                )
+        }
+        return request
+    }
+    
+    func responseBuilder(object: AnyObject?, error: NSError?) -> Response {
+        
+        var response = Response()
+        
+        if error != nil {
+            
+            response.status = .Failure
+            
+        } else{
+            
+            response.status = .Success
+        }
+        
+        response.object = object
+        return response
+    }
+    
+    // MARK: - Routing
     
     enum Router: URLRequestConvertible {
         

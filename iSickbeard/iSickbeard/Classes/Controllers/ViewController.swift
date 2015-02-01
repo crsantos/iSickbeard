@@ -16,20 +16,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let server1 = Server(name: "Sickbeard1", address: "http://192.168.1.70:8081/sickbeard", apiKey:"d0e18c0b7e094784539467ef7e0eb9ea");
+        let server1 = Server(
+            name: "Sickbeard1",
+            address: "http://192.168.1.70:8081/sickbeard",
+            apiKey:"d0e18c0b7e094784539467ef7e0eb9ea"
+        );
+        
         debugPrintln(server1)
         
-        let show1 = Show(name:"Lost", quality:.QualitySettingNA)
+        let show1 = Show(
+            name:"Lost",
+            quality:.QualitySettingNA
+        )
         debugPrintln(show1);
         
         // Test Ping
-        Sickbeard.Router.currentServer = server1
-        let request = Alamofire.request(Sickbeard.Router.Ping()).validate()
-            .responseJSON { (_, _, json, error) in
-                println(error)
+        let request = Sickbeard(server: server1).pingServer({ (response) -> () in
+            
+            if response.status == .Success {
                 
-                println(json)
-        }
+                println(response.object)
+            }
+        })
         
         println(request)
     }
