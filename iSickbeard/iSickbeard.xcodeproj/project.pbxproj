@@ -26,7 +26,6 @@
 		DDB5F7461A7DA234006F3F3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7451A7DA234006F3F3E /* Security.framework */; };
 		DDB5F7481A7DA23B006F3F3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */; };
 		DDB5F74E1A7DA254006F3F3E /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F74A1A7DA254006F3F3E /* HockeySDK.framework */; };
-		DDB5F74F1A7DA254006F3F3E /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DDB5F74C1A7DA254006F3F3E /* HockeySDK.xcconfig */; };
 		DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */; };
 /* End PBXBuildFile section */
 
@@ -350,7 +349,6 @@
 				DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */,
 				DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */,
 				DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */,
-				DDB5F74F1A7DA254006F3F3E /* HockeySDK.xcconfig in Resources */,
 				DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
