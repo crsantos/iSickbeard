@@ -43,6 +43,9 @@
 		DDB5F7481A7DA23B006F3F3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */; };
 		DDB5F74E1A7DA254006F3F3E /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F74A1A7DA254006F3F3E /* HockeySDK.framework */; };
 		DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */; };
+		DDD4ED0A1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
+		DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
+		DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +98,8 @@
 		DDB5F74A1A7DA254006F3F3E /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		DDB5F74C1A7DA254006F3F3E /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
 		DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		DDD4ED091A80329A00746537 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionSpec.swift; sourceTree = "<group>"; };
 		E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3FF4301A7EE67800941D39 /* String.swift */,
+				DDD4ED091A80329A00746537 /* Dictionary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				DD3FF41D1A7ED65700941D39 /* ShowSpec.swift */,
 				DD3FF4251A7EE1A200941D39 /* EpisodeSpec.swift */,
 				DD3FF42E1A7EE4B900941D39 /* StringExtensionsSpec.swift */,
+				DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */,
 			);
 			path = iSickbeardTests;
 			sourceTree = "<group>";
@@ -547,6 +554,7 @@
 				DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */,
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
 				DD3FF4201A7ED9A300941D39 /* Episode.swift in Sources */,
+				DDD4ED0A1A80329A00746537 /* Dictionary.swift in Sources */,
 				DD3FF4311A7EE67800941D39 /* String.swift in Sources */,
 				DD3FF4231A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,
 				DDAFFEBE1A7C22AF003DCCBD /* Server.swift in Sources */,
@@ -565,9 +573,11 @@
 				DD3FF4321A7EE67800941D39 /* String.swift in Sources */,
 				DD3FF42F1A7EE4B900941D39 /* StringExtensionsSpec.swift in Sources */,
 				DD3FF4211A7ED9A300941D39 /* Episode.swift in Sources */,
+				DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */,
 				DD3FF4241A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,
 				DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */,
 				DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */,
+				DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */,
 				DD3FF41E1A7ED65700941D39 /* ShowSpec.swift in Sources */,
 				DD3FF41C1A7EAEE400941D39 /* QualitySetting.swift in Sources */,
 				DD3FF4191A7EAE4500941D39 /* ServerSpec.swift in Sources */,
