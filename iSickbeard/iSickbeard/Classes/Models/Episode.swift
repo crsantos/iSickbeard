@@ -101,19 +101,25 @@ class Episode: DictionaryConvertible {
         
         if let showname = dictionary["show_name"] as? String{
             
-            // TODO: refactor this to reuse Show.convert.. 
-            //       from a sub-dict created from target keys
-            //       like newDict = dictionary.pick("show_name", "indexerid")
-            
-            // get show data if available
-            episode.show = Show(
-                name: showname,
-                indexerId: Int64(dictionary["indexerid"] as Int!),
-                airs: airString!,
-                location: "",
-                quality: QualitySetting(rawValue:dictionary["quality"] as String)!
+            let copiedShow = Dictionary<String, AnyObject>.pick(
+                dictionary, keys:
+                
+                "show_name",
+                "indexerid",
+                "airs",
+                "location",
+                "quality",
+                "show_status",
+                "network",
+                "paused",
+                "network",
+                "language",
+                "tvdbid"
             )
+            
+            episode.show = Show.convertFromDictionary(copiedShow)
         }
+        
         // TODO: let parse the other missing props
         
         return episode

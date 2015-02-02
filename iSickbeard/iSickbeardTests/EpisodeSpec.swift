@@ -40,7 +40,11 @@ class EpisodeSpec: QuickSpec {
                         "quality": "N/A",
                         "release_name": "",
                         "status": "Wanted",
-                        "subtitles": ""
+                        "subtitles": "",
+                        "show_name": "12 Monkeys",
+                        "show_status": "Continuing",
+                        "indexerid": 263365,
+                        "tvdbid": 263365
                     ]
                     
                     let episode = Episode.convertFromDictionary(dict)
