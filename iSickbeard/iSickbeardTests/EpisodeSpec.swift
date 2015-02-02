@@ -27,6 +27,30 @@ class EpisodeSpec: QuickSpec {
                     expect(episode.subtitles.first).to(equal("EN"))
                     expect(episode.subtitles.last).to(equal("FR"))
                 }
+                
+                it("should properly parse and build itself from a dictionary") {
+                    
+                    let dict = [
+                        
+                        "airs": "Tuesday, 9:00 PM",
+                        "airdate": "2015-01-23",
+                        "file_size": 0,
+                        "location": "",
+                        "name": "Out of Time: Self Portrait",
+                        "quality": "N/A",
+                        "release_name": "",
+                        "status": "Wanted",
+                        "subtitles": ""
+                    ]
+                    
+                    let episode = Episode.convertFromDictionary(dict)
+                    
+                    expect(episode!.name).to(equal("Out of Time: Self Portrait"))
+                    expect(episode!.quality).to(equal(QualitySetting.QualitySettingNA))
+                    expect(episode!.location).to(equal(""))
+                    expect(episode!.airdate).to(equal(Episode.simpleDateFormatter.dateFromString("2015-01-23")))
+                    expect(episode!.airs).to(equal(Episode.nextWeekdayDateFormatter.dateFromString("Tuesday, 9:00 PM")))
+                }
             }
         }
     }
