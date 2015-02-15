@@ -22,6 +22,12 @@ class ViewController: UIViewController {
             apiKey:"d0e18c0b7e094784539467ef7e0eb9ea"
         );
         
+        let server2 = Server(
+            name: "Sickbeard2",
+            address: "http://192.168.1.71:8081",
+            apiKey:"0e1441393aa482f300ca0553991a8fc4"
+        );
+        
         debugPrintln(server1)
         
         let show1 = Show(
@@ -34,7 +40,7 @@ class ViewController: UIViewController {
         debugPrintln(show1);
         
         // Test Ping
-        let request = Sickbeard(server: server1).pingServer({ (response) -> () in
+        let request = Sickbeard(server: server2).pingServer({ (response) -> () in
             
             if response.status == .Success {
                 
