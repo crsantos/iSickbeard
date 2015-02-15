@@ -9,6 +9,8 @@ xcodeproj 'iSickbeard/iSickbeard.xcodeproj'
 target :iSickbeard do
   pod 'Alamofire', '1.1.4'  
   pod 'SwiftColors', '0.1.1'
+  pod 'SwiftyUserDefaults', '1.0.0'
+  pod 'PrintlnMagic', '1.1.1'
 end
 
 target :iSickbeardTests, :exclusive => true do
