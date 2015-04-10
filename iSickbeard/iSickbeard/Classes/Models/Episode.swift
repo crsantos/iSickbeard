@@ -84,7 +84,7 @@ class Episode: DictionaryConvertible {
         
         var episode = Episode( // create EP object
             
-            name: dictionary["name"] as String,
+            name: dictionary["name"] as! String,
             seasonNumber: season,
             airDate: airDate!
         )

@@ -12,5 +12,5 @@ public protocol DictionaryConvertible {
     
     typealias Result
     
-    class func convertFromDictionary(dictionary:Dictionary<String,AnyObject>) -> Result?
+    static func convertFromDictionary(dictionary:Dictionary<String,AnyObject>) -> Result?
 }

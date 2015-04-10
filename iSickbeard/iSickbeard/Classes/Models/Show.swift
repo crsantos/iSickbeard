@@ -32,11 +32,11 @@ class Show: Printable, DictionaryConvertible  {
         
         var show = Show(
             
-            name: dictionary["show_name"] as String,
-            indexerId: Int64(dictionary["indexerid"] as Int!),
-            airs: dictionary["airs"] as String,
-            location: dictionary["location"] as String,
-            quality: QualitySetting(rawValue:dictionary["quality"] as String)!
+            name: dictionary["show_name"] as! String,
+            indexerId: Int64(dictionary["indexerid"] as! Int!),
+            airs: dictionary["airs"] as! String,
+            location: dictionary["location"]as! String,
+            quality: QualitySetting(rawValue:dictionary["quality"] as! String)!
         )
         
         // TODO: let parse the other missing props
