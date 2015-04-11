@@ -13,6 +13,6 @@ target :iSickbeard do
 end
 
 target :iSickbeardTests, :exclusive => true do
-  pod 'Quick', '0.2.2'
-  pod 'Nimble', '0.3.0'
+  pod 'Quick', '0.3.1'
+  pod 'Nimble', '0.4.2'
 end
