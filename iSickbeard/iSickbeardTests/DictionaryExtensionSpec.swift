@@ -14,7 +14,7 @@ class DictionaryExtensionSpec: QuickSpec {
                     let dict:Dictionary<String, String> = ["one":"1", "two": "2", "three": "3"]
                     let copiedDict = Dictionary<String,String>.pick(dict, keys: "one", "three")
                     
-                    expect(countElements(copiedDict.keys)).to(equal(2))
+                    expect(count(copiedDict.keys)).to(equal(2))
                     expect(copiedDict["one"]).to(equal("1"))
                     expect(copiedDict["three"]).to(equal("3"))
                 }
