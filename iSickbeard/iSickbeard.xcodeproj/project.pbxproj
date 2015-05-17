@@ -25,6 +25,8 @@
 		DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
+		DD7114481B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */; };
+		DD71144A1B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
 		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
@@ -63,7 +65,6 @@
 		3B137B53C5F25F62E434ACCB /* Pods-iSickbeardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.debug.xcconfig"; sourceTree = "<group>"; };
-		9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSpec.swift; sourceTree = "<group>"; };
 		DD3FF41D1A7ED65700941D39 /* ShowSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSpec.swift; sourceTree = "<group>"; };
@@ -75,6 +76,8 @@
 		DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryConvertible.swift; sourceTree = "<group>"; };
 		DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.adhoc.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.adhoc.xcconfig"; sourceTree = "<group>"; };
 		DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sickbeard.swift; sourceTree = "<group>"; };
+		DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.appstore.xcconfig"; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
 		DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSickbeard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAFFE911A7C0679003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +103,6 @@
 		DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		DDD4ED091A80329A00746537 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionSpec.swift; sourceTree = "<group>"; };
-		E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +157,10 @@
 			children = (
 				556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */,
 				DD410F501A7D044800F98B08 /* Pods-iSickbeard.adhoc.xcconfig */,
-				E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */,
+				DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */,
 				3B137B53C5F25F62E434ACCB /* Pods-iSickbeardTests.debug.xcconfig */,
-				9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */,
 				18DEDD08550BD7494A24624D /* Pods-iSickbeardTests.adhoc.xcconfig */,
+				DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -422,9 +424,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7114481B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig in Resources */,
 				DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */,
 				DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */,
 				DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */,
+				DD71144A1B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig in Resources */,
 				DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,8 +646,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -726,16 +731,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DDAFFEAB1A7C067A003DCCBD /* Release */ = {
+		DDAFFEAB1A7C067A003DCCBD /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -763,13 +769,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = AppStore;
 		};
 		DDAFFEAD1A7C067A003DCCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -789,9 +796,9 @@
 			};
 			name = Debug;
 		};
-		DDAFFEAE1A7C067A003DCCBD /* Release */ = {
+		DDAFFEAE1A7C067A003DCCBD /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E746A262FF109534A0253055 /* Pods-iSickbeard.release.xcconfig */;
+			baseConfigurationReference = DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */;
 			buildSettings = {
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -806,7 +813,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release;
+			name = AppStore;
 		};
 		DDAFFEB01A7C067A003DCCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -828,9 +835,9 @@
 			};
 			name = Debug;
 		};
-		DDAFFEB11A7C067A003DCCBD /* Release */ = {
+		DDAFFEB11A7C067A003DCCBD /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F3E359A694098F9A23035A8 /* Pods-iSickbeardTests.release.xcconfig */;
+			baseConfigurationReference = DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -842,7 +849,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSickbeard.app/iSickbeard";
 			};
-			name = Release;
+			name = AppStore;
 		};
 /* End XCBuildConfiguration section */
 
@@ -851,31 +858,31 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDAFFEAA1A7C067A003DCCBD /* Debug */,
-				DDAFFEAB1A7C067A003DCCBD /* Release */,
+				DDAFFEAB1A7C067A003DCCBD /* AppStore */,
 				DD410F4D1A7CF0FB00F98B08 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 		DDAFFEAC1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDAFFEAD1A7C067A003DCCBD /* Debug */,
-				DDAFFEAE1A7C067A003DCCBD /* Release */,
+				DDAFFEAE1A7C067A003DCCBD /* AppStore */,
 				DD410F4E1A7CF0FB00F98B08 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 		DDAFFEAF1A7C067A003DCCBD /* Build configuration list for PBXNativeTarget "iSickbeardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDAFFEB01A7C067A003DCCBD /* Debug */,
-				DDAFFEB11A7C067A003DCCBD /* Release */,
+				DDAFFEB11A7C067A003DCCBD /* AppStore */,
 				DD410F4F1A7CF0FB00F98B08 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = AdHoc;
 		};
 /* End XCConfigurationList section */
 	};
