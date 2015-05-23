@@ -673,7 +673,7 @@
 				);
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "\"-D COCOAPODS\" -DHOCKEY -DADHOC";
+				OTHER_SWIFT_FLAGS = "-DHOCKEY -DADHOC $(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "78181996-17EF-4A1F-A804-76B12372EDD9";
 				VERSIONING_SYSTEM = "apple-generic";
