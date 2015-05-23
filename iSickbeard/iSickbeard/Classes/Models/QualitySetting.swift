@@ -10,6 +10,7 @@ enum QualitySetting :String {
     
     case QualitySettingNA          = "N/A"
     case QualitySettingSDTV        = "SD TV"
+    case QualitySettingSD          = "SD"
     case QualitySettingSDDVD       = "SD DVD"
     case QualitySettingHDTV        = "HD TV"
     case QualitySettingHD          = "HD"
