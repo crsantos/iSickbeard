@@ -10,6 +10,7 @@ xcodeproj 'iSickbeard/iSickbeard.xcodeproj'
 target :iSickbeard do
   pod 'Alamofire', '~> 1.2'
   pod 'PrintlnMagic', '1.2.1'
+  pod 'SwiftyJSON', '~> 2.2'
 end
 
 target :iSickbeardTests, :exclusive => true do
