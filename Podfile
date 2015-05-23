@@ -8,7 +8,7 @@ workspace 'iSickbeard/iSickbeard.xcworkspace'
 xcodeproj 'iSickbeard/iSickbeard.xcodeproj'
 
 target :iSickbeard do
-  pod 'Alamofire', '1.2.0'
+  pod 'Alamofire', '~> 1.2'
   pod 'PrintlnMagic', '1.2.1'
 end
 

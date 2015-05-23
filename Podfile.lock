@@ -5,7 +5,7 @@ PODS:
   - Quick (0.3.1)
 
 DEPENDENCIES:
-  - Alamofire (= 1.2.0)
+  - Alamofire (~> 1.2)
   - Nimble (= 0.4.2)
   - PrintlnMagic (= 1.2.1)
   - Quick (= 0.3.1)
