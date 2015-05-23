@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 public enum Status {
     
@@ -16,9 +17,9 @@ public enum Status {
 
 public class Response {
     
-    public var status: Status     = .Failure
-    public var object: AnyObject? = nil
-    public var error: NSError?    = nil
+    public var status: Status  = .Failure
+    public var object: JSON?   = nil
+    public var error: NSError? = nil
 }
 
 struct Sickbeard {
@@ -76,13 +77,14 @@ struct Sickbeard {
                 
                 completion(
                     
-                    response: self.responseBuilder(json, error: error)
+                    response: self.responseBuilder(JSON(json!), error: error)
                 )
+                
         }
         return request
     }
     
-    func responseBuilder(object: AnyObject?, error: NSError?) -> Response {
+    func responseBuilder(object: JSON?, error: NSError?) -> Response {
         
         var response = Response()
         
