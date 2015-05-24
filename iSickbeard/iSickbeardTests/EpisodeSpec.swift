@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import SwiftyJSON
 
 class EpisodeSpec: QuickSpec {
     
@@ -47,7 +48,7 @@ class EpisodeSpec: QuickSpec {
                         "tvdbid": 263365
                     ]
                     
-                    let episode = Episode.convertFromDictionary(dict)
+                    let episode = Episode.convertFromDictionary(JSON(dict))
                     
                     expect(episode!.name).to(equal("Out of Time: Self Portrait"))
                     expect(episode!.quality).to(equal(QualitySetting.QualitySettingNA))

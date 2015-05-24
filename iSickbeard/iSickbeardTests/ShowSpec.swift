@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import SwiftyJSON
 
 class ShowSpec: QuickSpec {
     
@@ -75,7 +76,7 @@ class ShowSpec: QuickSpec {
                         "tvrage_name": "12 Monkeys"
                     ]
                     
-                    let show = Show.convertFromDictionary(dict)
+                    let show = Show.convertFromDictionary(JSON(dict))
                     
                     expect(show!.name).to(equal("12 Monkeys"))
                     expect(show!.quality).to(equal(QualitySetting.QualitySettingHD))
