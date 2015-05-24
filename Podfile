@@ -16,4 +16,5 @@ end
 target :iSickbeardTests, :exclusive => true do
   pod 'Quick', '0.3.1'
   pod 'Nimble', '0.4.2'
+  pod 'SwiftyJSON', '~> 2.2'
 end
