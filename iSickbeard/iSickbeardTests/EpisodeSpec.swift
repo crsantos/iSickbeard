@@ -41,6 +41,7 @@ class EpisodeSpec: QuickSpec {
                         "quality": "N/A",
                         "release_name": "",
                         "status": "Wanted",
+                        "season": "1",
                         "subtitles": "",
                         "show_name": "12 Monkeys",
                         "show_status": "Continuing",

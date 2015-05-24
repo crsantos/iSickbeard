@@ -78,13 +78,9 @@ class Episode: DictionaryConvertible {
             airDate: airDate!
         )
         
-        episode.name = dictionary["ep_name"].stringValue
         episode.airs = self.nextWeekdayDateFormatter.dateFromString(dictionary["airs"].stringValue)
         
-        
         var showname = dictionary["show_name"]
-        
-        
         
         let copiedShow = Dictionary<String, AnyObject>.pick(
             dictionary.dictionaryObject!, keys:
@@ -108,5 +104,12 @@ class Episode: DictionaryConvertible {
         // TODO: let parse the other missing props
         
         return episode
+    }
+    
+    // MARK: - Public
+    
+    var description : String {
+        
+        return "[Show name: \(self.name), airs: \(self.airs), show: \(self.show)]"
     }
 }
