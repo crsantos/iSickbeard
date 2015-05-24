@@ -47,6 +47,7 @@
 		DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */; };
 		DDF6C4151B114C30000E698A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6C4141B114C30000E698A /* GlobalConstants.swift */; };
+		DDF6C41A1B11D29B000E698A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6C4141B114C30000E698A /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -584,6 +585,7 @@
 				DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */,
 				DD3FF4321A7EE67800941D39 /* String.swift in Sources */,
 				DD3FF42F1A7EE4B900941D39 /* StringExtensionsSpec.swift in Sources */,
+				DDF6C41A1B11D29B000E698A /* GlobalConstants.swift in Sources */,
 				DD3FF4211A7ED9A300941D39 /* Episode.swift in Sources */,
 				DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */,
 				DD3FF4241A7EDA7500941D39 /* EpisodeStatus.swift in Sources */,

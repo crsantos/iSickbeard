@@ -63,7 +63,7 @@ struct Sickbeard {
         let request = self.requestBuilder(Sickbeard.Router.ShowList(), completionBlock: { (response) -> () in
             
             var shows:Array<Show> = Array<Show>()
-            if let data:Dictionary<String,JSON> = response.object?[JSONConstants.jsonDataKey].dictionaryValue {
+            if let data:Dictionary<String,JSON> = response.object?[JSONConstants.GeneralKeys.jsonDataKey].dictionaryValue {
                 
                 var list:Array<JSON> = Array(data.values)
                 

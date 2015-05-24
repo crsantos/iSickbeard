@@ -34,18 +34,18 @@ class Show: Printable, DictionaryConvertible  {
         
         var qualitySetting:QualitySetting = .QualitySettingNA
         
-        if let quality = QualitySetting(rawValue:dictionary["quality"].stringValue){
+        if let quality = QualitySetting(rawValue:dictionary[JSONConstants.GeneralKeys.jsonQualityKey].stringValue){
 
             qualitySetting = quality
         }
         
         var show = Show(
             
-            name: dictionary["show_name"].stringValue,
-            indexerId: Int64(dictionary["indexerid"].intValue),
-            airs: dictionary["airs"].stringValue,
-            location: dictionary["location"].stringValue,
-            quality: qualitySetting
+            name:       dictionary[JSONConstants.ShowKeys.jsonShowNameKey].stringValue,
+            indexerId:  Int64(dictionary[JSONConstants.ShowKeys.jsonIndexerIdKey].intValue),
+            airs:       dictionary[JSONConstants.ShowKeys.jsonAirsKey].stringValue,
+            location:   dictionary[JSONConstants.ShowKeys.jsonLocationKey].stringValue,
+            quality:    qualitySetting
         )
         
         // TODO: let parse the other missing props

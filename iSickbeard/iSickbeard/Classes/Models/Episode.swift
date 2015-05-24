@@ -85,17 +85,17 @@ class Episode: DictionaryConvertible {
         let copiedShow = Dictionary<String, AnyObject>.pick(
             dictionary.dictionaryObject!, keys:
             
-            "show_name",
-            "indexerid",
-            "airs",
-            "location",
-            "quality",
-            "show_status",
-            "network",
-            "paused",
-            "network",
-            "language",
-            "tvdbid"
+            JSONConstants.ShowKeys.jsonShowNameKey,
+            JSONConstants.ShowKeys.jsonIndexerIdKey,
+            JSONConstants.ShowKeys.jsonAirsKey,
+            JSONConstants.ShowKeys.jsonLocationKey,
+            JSONConstants.GeneralKeys.jsonQualityKey,
+            JSONConstants.ShowKeys.jsonShowStatusKey,
+            JSONConstants.ShowKeys.jsonNetworkKey,
+            JSONConstants.ShowKeys.jsonPausedKey,
+            JSONConstants.ShowKeys.jsonNetworkKey,
+            JSONConstants.ShowKeys.jsonLanguageKey,
+            JSONConstants.GeneralKeys.jsonTvdbIdKey
         )
         
         var clonedEpisode = JSON(copiedShow)
