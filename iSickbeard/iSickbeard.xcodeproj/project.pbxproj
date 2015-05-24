@@ -25,8 +25,6 @@
 		DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
-		DD7114481B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */; };
-		DD71144A1B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
 		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
@@ -399,7 +397,7 @@
 		DDAFFE851A7C0679003DCCBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Carlos Santos";
 				TargetAttributes = {
 					DDAFFE8C1A7C0679003DCCBD = {
@@ -435,11 +433,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7114481B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig in Resources */,
 				DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */,
 				DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */,
 				DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */,
-				DD71144A1B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig in Resources */,
 				DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
