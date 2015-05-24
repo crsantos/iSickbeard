@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public protocol DictionaryConvertible {
     
     typealias Result
     
-    static func convertFromDictionary(dictionary:Dictionary<String,AnyObject>) -> Result?
+    static func convertFromDictionary(dictionary:JSON) -> Result?
 }

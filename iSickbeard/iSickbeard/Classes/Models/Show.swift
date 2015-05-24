@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Carlos Santos. All rights reserved.
 //
 
+import SwiftyJSON
+
 class Show: Printable, DictionaryConvertible  {
     
     var name:String
@@ -28,15 +30,22 @@ class Show: Printable, DictionaryConvertible  {
     
     // MARK: - DictionaryConvertible methods
     
-    class func convertFromDictionary(dictionary: Dictionary<String, AnyObject>) -> Show? {
+    class func convertFromDictionary(dictionary: JSON) -> Show? {
+        
+        var qualitySetting:QualitySetting = .QualitySettingNA
+        
+        if let quality = QualitySetting(rawValue:dictionary["quality"].stringValue){
+
+            qualitySetting = quality
+        }
         
         var show = Show(
             
-            name: dictionary["show_name"] as! String,
-            indexerId: Int64(dictionary["indexerid"] as! Int!),
-            airs: dictionary["airs"] as! String,
-            location: dictionary["location"]as! String,
-            quality: QualitySetting(rawValue:dictionary["quality"] as! String)!
+            name: dictionary["show_name"].stringValue,
+            indexerId: Int64(dictionary["indexerid"].intValue),
+            airs: dictionary["airs"].stringValue,
+            location: dictionary["location"].stringValue,
+            quality: qualitySetting
         )
         
         // TODO: let parse the other missing props

@@ -40,11 +40,11 @@ class ViewController: UIViewController {
         debugPrintln(show1);
         
         // Test Ping
-        let request = Sickbeard(server: server2).pingServer({ (response) -> () in
+        let request = Sickbeard(server: server1).ShowList({ (response, shows) -> () in
             
             if response.status == .Success {
                 
-                println(response.object)
+                println(shows)
             }
         })
         

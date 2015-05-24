@@ -16,7 +16,7 @@ public enum Status {
 }
 
 public class Response {
-    
+
     public var status: Status  = .Failure
     public var object: JSON?   = nil
     public var error: NSError? = nil
@@ -50,7 +50,7 @@ struct Sickbeard {
     
     func pingServer(completion:(response: Response)->()) -> Request {
         
-        let request = self.requestBuilder(Sickbeard.Router.Ping(), completion: { (response) -> () in
+        let request = self.requestBuilder(Sickbeard.Router.Ping(), completionBlock: { (response) -> () in
             
             completion(response: response)
         })
@@ -58,11 +58,25 @@ struct Sickbeard {
         return request
     }
     
-    func ShowList(completion:(response: Response)->()) -> Request {
+    func ShowList(completion:(response: Response, shows: Array<Show>)->()) -> Request {
         
-        let request = self.requestBuilder(Sickbeard.Router.ShowList(), completion: { (response) -> () in
+        let request = self.requestBuilder(Sickbeard.Router.ShowList(), completionBlock: { (response) -> () in
             
-            completion(response: response)
+            var shows:Array<Show> = Array<Show>()
+            if let data:Dictionary<String,JSON> = response.object?[JSONConstants.jsonDataKey].dictionaryValue {
+                
+                var list:Array<JSON> = Array(data.values)
+                
+                for jsonShow:JSON in list{
+                    
+                    if let show = Show.convertFromDictionary(jsonShow){
+                    
+                        shows.append(show)
+                    }
+                }
+            }
+            
+            completion(response: response, shows: shows)
         })
         
         return request
@@ -70,16 +84,15 @@ struct Sickbeard {
     
     // MARK: - Private methods
     
-    func requestBuilder(type: Router, completion:(response: Response)->()) -> Request {
+    func requestBuilder(type: Router, completionBlock:(response: Response)->()) -> Request {
         
         let request = Alamofire.request(type).validate()
             .responseJSON { (_, _, json, error) in
                 
-                completion(
+                completionBlock(
                     
                     response: self.responseBuilder(JSON(json!), error: error)
                 )
-                
         }
         return request
     }
@@ -97,7 +110,9 @@ struct Sickbeard {
             response.status = .Success
         }
         
+        response.error = error
         response.object = object
+
         return response
     }
     

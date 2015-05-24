@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Episode: DictionaryConvertible {
     
@@ -59,66 +60,50 @@ class Episode: DictionaryConvertible {
     
     // MARK: - DictionaryConvertible methods
     
-    class func convertFromDictionary(dictionary: Dictionary<String, AnyObject>) -> Episode? {
+    class func convertFromDictionary(dictionary: JSON) -> Episode? {
         
         var airDate:NSDate? // tmp vars
         var airs:NSDate?    // to save NSDates
         var airString:String?
         var season:Int = 0
         
-        if let airdateStr:String = dictionary["airdate"] as? String{
-            
-            airDate = self.simpleDateFormatter.dateFromString(airdateStr)
-        }
+        airDate = self.simpleDateFormatter.dateFromString(dictionary["airdate"].stringValue)
         
-        if let airsStr:String = dictionary["airs"] as? String {
-            
-            airString = airsStr
-            airs = self.nextWeekdayDateFormatter.dateFromString(airsStr)
-        }
-        
-        if let seasonStr = dictionary["season"] as? String{
-            
-            season = seasonStr.toInt()!
-        }
+        season = dictionary["season"].intValue
         
         var episode = Episode( // create EP object
             
-            name: dictionary["name"] as! String,
+            name: dictionary["name"].stringValue,
             seasonNumber: season,
             airDate: airDate!
         )
         
-        if let epName:String = dictionary["ep_name"] as? String {
-
-            episode.name = epName // override name with ep_name if it exists
-        }
+        episode.name = dictionary["ep_name"].stringValue
+        episode.airs = self.nextWeekdayDateFormatter.dateFromString(dictionary["airs"].stringValue)
         
-        if airs != nil {
-
-            episode.airs = airs!
-        }
         
-        if let showname = dictionary["show_name"] as? String{
+        var showname = dictionary["show_name"]
+        
+        
+        
+        let copiedShow = Dictionary<String, AnyObject>.pick(
+            dictionary.dictionaryObject!, keys:
             
-            let copiedShow = Dictionary<String, AnyObject>.pick(
-                dictionary, keys:
-                
-                "show_name",
-                "indexerid",
-                "airs",
-                "location",
-                "quality",
-                "show_status",
-                "network",
-                "paused",
-                "network",
-                "language",
-                "tvdbid"
-            )
-            
-            episode.show = Show.convertFromDictionary(copiedShow)
-        }
+            "show_name",
+            "indexerid",
+            "airs",
+            "location",
+            "quality",
+            "show_status",
+            "network",
+            "paused",
+            "network",
+            "language",
+            "tvdbid"
+        )
+        
+        var clonedEpisode = JSON(copiedShow)
+        episode.show = Show.convertFromDictionary(clonedEpisode)
         
         // TODO: let parse the other missing props
         
