@@ -48,6 +48,7 @@
 		DDD4ED0A1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */; };
+		DDF6C4151B114C30000E698A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6C4141B114C30000E698A /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		DDD4ED091A80329A00746537 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionSpec.swift; sourceTree = "<group>"; };
+		DDF6C4141B114C30000E698A /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 				DDAFFEB61A7C1210003DCCBD /* Models */,
 				DD3FF4331A7EE6D300941D39 /* Protocols */,
 				DD6331CF1A7E4E540029E25A /* Providers */,
+				DDF6C4131B114C1D000E698A /* Util */,
 				DDAFFEB71A7C1210003DCCBD /* Views */,
 			);
 			path = Classes;
@@ -335,6 +338,14 @@
 				DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDF6C4131B114C1D000E698A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DDF6C4141B114C30000E698A /* GlobalConstants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +576,7 @@
 				DDAFFEC01A7C3DD2003DCCBD /* Show.swift in Sources */,
 				DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */,
 				DDAFFEB91A7C1246003DCCBD /* AppDelegate.swift in Sources */,
+				DDF6C4151B114C30000E698A /* GlobalConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
