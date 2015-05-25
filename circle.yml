@@ -11,8 +11,8 @@ machine:
 dependencies:
   pre:
     - bundle install
-    - bundle exec pod setup
-    - bundle exec pod install
+    - pod setup
+    - pod install
 test:
   override:
     - set -o pipefail &&
