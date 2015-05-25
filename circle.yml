@@ -9,10 +9,10 @@ machine:
     XCODE_WORKSPACE: iSickbeard.xcworkspace
     APPNAME: iSickbeard
 dependencies:
-  pre:
-    - bundle install
-    - bundle exec pod setup
+  override:
+    - bundle install --path=vendor/bundle --jobs=4
     - bundle exec pod install
+    - bundle exec pod setup
 test:
   override:
     - set -o pipefail &&
