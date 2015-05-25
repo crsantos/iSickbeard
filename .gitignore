@@ -21,6 +21,3 @@ DerivedData
 
 # CocoaPods
 Pods/
-
-# Ruby/rbenv
-.ruby-version
