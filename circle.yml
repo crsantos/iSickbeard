@@ -11,8 +11,8 @@ machine:
 dependencies:
   override:
     - bundle install --path=vendor/bundle --jobs=4
-    - bundle exec pod install
     - bundle exec pod setup
+    - bundle exec pod install
 test:
   override:
     - set -o pipefail &&
