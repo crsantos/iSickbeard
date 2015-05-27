@@ -686,7 +686,7 @@
 			buildSettings = {
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).adhoc";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Betfair Limited";
 				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
