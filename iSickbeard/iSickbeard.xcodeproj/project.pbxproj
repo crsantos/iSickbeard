@@ -361,6 +361,7 @@
 				D3FCC2C1E20230AAE5DA0408 /* Copy Pods Resources */,
 				C9C4BF263CF4121AE0A9EB06 /* Embed Pods Frameworks */,
 				DDB5F7381A7DA1EC006F3F3E /* HockeyApp */,
+				DD856D6F1B15ED2600529441 /* Bump GREENHOUSECI Version */,
 			);
 			buildRules = (
 			);
@@ -540,6 +541,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DD856D6F1B15ED2600529441 /* Bump GREENHOUSECI Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bump GREENHOUSECI Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ../scripts/greenhouseci_version_bump.sh;
 		};
 		DDB5F7381A7DA1EC006F3F3E /* HockeyApp */ = {
 			isa = PBXShellScriptBuildPhase;
