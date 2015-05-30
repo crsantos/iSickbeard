@@ -11,6 +11,7 @@ target :iSickbeard do
   pod 'Alamofire', '~> 1.2'
   pod 'PrintlnMagic', '1.2.1'
   pod 'SwiftyJSON', '~> 2.2'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 end
 
 target :iSickbeardTests, :exclusive => true do
