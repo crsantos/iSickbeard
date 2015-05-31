@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-xctool -workspace iSickbeard/iSickbeard.xcworkspace -scheme Debug -sdk iphonesimulator build test
+xctool clean build test ONLY_ACTIVE_ARCH=NO

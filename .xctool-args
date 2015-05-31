@@ -1,0 +1,7 @@
+[
+  "-workspace", "iSickbeard/iSickbeard.xcworkspace",
+  "-scheme", "Debug",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
