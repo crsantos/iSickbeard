@@ -32,5 +32,8 @@ struct JSONConstants {
 
     struct EpisodeKeys {
 
+        static let jsonEpisodeNameKey    = "name"
+        static let jsonEpisodeAirDateKey = "airdate"
+        static let jsonEpisodeSeasonKey  = "season"
     }
 }
