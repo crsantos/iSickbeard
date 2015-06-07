@@ -16,6 +16,8 @@ class Show: Printable, DictionaryConvertible  {
     var genre:Array<String> = []
     var location:String
     var indexerId:Int64
+    var status:String = "Unknown"
+    var paused:Bool = false
     
     // MARK: - Lifecycle
     
@@ -47,8 +49,10 @@ class Show: Printable, DictionaryConvertible  {
             location:   dictionary[JSONConstants.ShowKeys.jsonLocationKey].stringValue,
             quality:    qualitySetting
         )
-        
-        // TODO: let parse the other missing props
+
+        show.status    = dictionary[JSONConstants.ShowKeys.jsonShowStatusKey].stringValue
+        show.indexerId = dictionary[JSONConstants.ShowKeys.jsonIndexerIdKey].int64Value
+        show.paused    = dictionary[JSONConstants.ShowKeys.jsonPausedKey].boolValue
         
         return show
     }

@@ -56,6 +56,7 @@ class EpisodeSpec: QuickSpec {
                     expect(episode!.location).to(equal(""))
                     expect(episode!.airdate).to(equal(Episode.simpleDateFormatter.dateFromString("2015-01-23")))
                     expect(episode!.airs).to(equal(Episode.nextWeekdayDateFormatter.dateFromString("Tuesday, 9:00 PM")))
+                    expect(episode!.show!.status).to(equal("Continuing"))
                 }
             }
         }

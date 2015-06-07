@@ -67,20 +67,16 @@ class Episode: DictionaryConvertible {
         var airString:String?
         var season:Int = 0
         
-        airDate = self.simpleDateFormatter.dateFromString(dictionary["airdate"].stringValue)
-        
-        season = dictionary["season"].intValue
+        airDate = self.simpleDateFormatter.dateFromString(dictionary[JSONConstants.EpisodeKeys.jsonEpisodeAirDateKey].stringValue)
         
         var episode = Episode( // create EP object
             
-            name: dictionary["name"].stringValue,
-            seasonNumber: season,
+            name: dictionary[JSONConstants.EpisodeKeys.jsonEpisodeNameKey].stringValue,
+            seasonNumber: dictionary[JSONConstants.EpisodeKeys.jsonEpisodeSeasonKey].intValue,
             airDate: airDate!
         )
         
         episode.airs = self.nextWeekdayDateFormatter.dateFromString(dictionary["airs"].stringValue)
-        
-        var showname = dictionary["show_name"]
         
         let copiedShow = Dictionary<String, AnyObject>.pick(
             dictionary.dictionaryObject!, keys:
