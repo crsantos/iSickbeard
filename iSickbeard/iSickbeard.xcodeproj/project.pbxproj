@@ -98,9 +98,6 @@
 		DDB5F7431A7DA230006F3F3E /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		DDB5F7451A7DA234006F3F3E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DDB5F74A1A7DA254006F3F3E /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
-		DDB5F74C1A7DA254006F3F3E /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
-		DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		DDD4ED091A80329A00746537 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionSpec.swift; sourceTree = "<group>"; };
 		DDF6C4141B114C30000E698A /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
@@ -139,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				DD1166D31B25A1B400A8BCF0 /* Crashlytics.framework */,
-				DDB5F7491A7DA254006F3F3E /* HockeySDK.embeddedframework */,
 				DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */,
 				DDB5F7451A7DA234006F3F3E /* Security.framework */,
 				DDB5F7431A7DA230006F3F3E /* QuickLook.framework */,
@@ -319,25 +315,6 @@
 			);
 			name = LauchScreen;
 			path = iSickbeard/LauchScreen;
-			sourceTree = "<group>";
-		};
-		DDB5F7491A7DA254006F3F3E /* HockeySDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				DDB5F74A1A7DA254006F3F3E /* HockeySDK.framework */,
-				DDB5F74B1A7DA254006F3F3E /* Resources */,
-			);
-			name = HockeySDK.embeddedframework;
-			path = "Vendor/HockeySDK-iOS/HockeySDK.embeddedframework";
-			sourceTree = "<group>";
-		};
-		DDB5F74B1A7DA254006F3F3E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DDB5F74C1A7DA254006F3F3E /* HockeySDK.xcconfig */,
-				DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		DDF6C4131B114C1D000E698A /* Util */ = {
