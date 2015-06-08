@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import HockeySDK
 
 @UIApplicationMain
 
@@ -19,9 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Override point for customization after application launch.
-        #if HOCKEY && ADHOC
-        self.setupHockeyAppBoilerplate()
-        #endif
         return true
     }
 
@@ -45,20 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-    // MARK: - Private
-    
-    func setupHockeyAppBoilerplate() {
-        
-        let bundle  = NSBundle.mainBundle()
-        let version = bundle.objectForInfoDictionaryKey("AdhocIdentifier") as! String!
-        
-        var sharedHockeyManager = BITHockeyManager.sharedHockeyManager()
-        sharedHockeyManager.configureWithIdentifier(version)
-        sharedHockeyManager.startManager()
-        sharedHockeyManager.authenticator.authenticateInstallation()
-        sharedHockeyManager.testIdentifier()
     }
 }
 
