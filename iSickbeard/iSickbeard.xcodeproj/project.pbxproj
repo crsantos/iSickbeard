@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C5368C61ACC1710D6958389 /* Pods_iSickbeardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		91F937BC85D7C62B5EDBC723 /* Pods_iSickbeard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DD1166D41B25A1B400A8BCF0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1166D31B25A1B400A8BCF0 /* Crashlytics.framework */; };
 		DD3FF4191A7EAE4500941D39 /* ServerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */; };
 		DD3FF41A1A7EAEE000941D39 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBD1A7C22AF003DCCBD /* Server.swift */; };
 		DD3FF41B1A7EAEE400941D39 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFFEBF1A7C3DD2003DCCBD /* Show.swift */; };
@@ -41,7 +42,6 @@
 		DDB5F7441A7DA230006F3F3E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7431A7DA230006F3F3E /* QuickLook.framework */; };
 		DDB5F7461A7DA234006F3F3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7451A7DA234006F3F3E /* Security.framework */; };
 		DDB5F7481A7DA23B006F3F3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */; };
-		DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDB5F74D1A7DA254006F3F3E /* HockeySDKResources.bundle */; };
 		DDD4ED0A1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */; };
@@ -65,6 +65,7 @@
 		4D73DED24AA33B71B0B8C3C5 /* Pods_iSickbeardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C313941A1C5B6E3200B57 /* Pods-iSickbeard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.debug.xcconfig"; sourceTree = "<group>"; };
 		BD536AE6A1B06DC940DD83F9 /* Pods_iSickbeard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSickbeard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1166D31B25A1B400A8BCF0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		DD3FF4181A7EAE4500941D39 /* ServerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSpec.swift; sourceTree = "<group>"; };
 		DD3FF41D1A7ED65700941D39 /* ShowSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSpec.swift; sourceTree = "<group>"; };
 		DD3FF41F1A7ED9A300941D39 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB5F7481A7DA23B006F3F3E /* SystemConfiguration.framework in Frameworks */,
+				DD1166D41B25A1B400A8BCF0 /* Crashlytics.framework in Frameworks */,
 				DDB5F7461A7DA234006F3F3E /* Security.framework in Frameworks */,
 				DDB5F7441A7DA230006F3F3E /* QuickLook.framework in Frameworks */,
 				DDB5F7421A7DA227006F3F3E /* QuartzCore.framework in Frameworks */,
@@ -136,6 +138,7 @@
 		3EF7455F1AE4CCBE112FB8F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD1166D31B25A1B400A8BCF0 /* Crashlytics.framework */,
 				DDB5F7491A7DA254006F3F3E /* HockeySDK.embeddedframework */,
 				DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */,
 				DDB5F7451A7DA234006F3F3E /* Security.framework */,
@@ -359,6 +362,7 @@
 				D3FCC2C1E20230AAE5DA0408 /* Copy Pods Resources */,
 				C9C4BF263CF4121AE0A9EB06 /* Embed Pods Frameworks */,
 				DD856D6F1B15ED2600529441 /* Bump GREENHOUSECI Version */,
+				DD1166D21B25A0CF00A8BCF0 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -434,7 +438,6 @@
 			files = (
 				DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */,
 				DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */,
-				DDB5F7501A7DA254006F3F3E /* HockeySDKResources.bundle in Resources */,
 				DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +541,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DD1166D21B25A0CF00A8BCF0 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 47dde6c42d4c92a972cc244b76a9249bbda4e76d e666f492214fe31053193d887b4f028e7511522666084f9e9a03cbc27e84f908";
 		};
 		DD856D6F1B15ED2600529441 /* Bump GREENHOUSECI Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -671,7 +688,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Betfair Limited";
 				CURRENT_PROJECT_VERSION = 2;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -790,7 +810,10 @@
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier).debug";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 2;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -804,9 +827,12 @@
 			buildSettings = {
 				APP_ID = "info.crsantos.$(PRODUCT_NAME:rfc1034identifier)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 2;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

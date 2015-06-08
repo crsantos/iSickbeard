@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 @UIApplicationMain
 
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Override point for customization after application launch.
+        self.setupCrashlyticsBoilerplate()
         return true
     }
 
@@ -41,6 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    // MARK: - Private
+    
+    func setupCrashlyticsBoilerplate() {
+
+        // Debug
+        Crashlytics.startWithAPIKey("47dde6c42d4c92a972cc244b76a9249bbda4e76d")
     }
 }
 
