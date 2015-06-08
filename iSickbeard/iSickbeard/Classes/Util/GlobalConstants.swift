@@ -15,6 +15,7 @@ struct JSONConstants {
         static let jsonDataKey       = "data"
         static let jsonQualityKey    = "quality"
         static let jsonTvdbIdKey     = "tvdbid"
+        static let jsonEpisodesKey  = "episodes"
     }
 
     struct ShowKeys {
@@ -22,7 +23,6 @@ struct JSONConstants {
         static let jsonShowNameKey   = "show_name"
         static let jsonIndexerIdKey  = "indexerid"
         static let jsonAirsKey       = "airs"
-        static let jsonLocationKey   = "location"
         static let jsonShowStatusKey = "show_status"
         static let jsonNetworkKey    = "network"
         static let jsonPausedKey     = "paused"
@@ -32,8 +32,13 @@ struct JSONConstants {
 
     struct EpisodeKeys {
 
-        static let jsonEpisodeNameKey    = "name"
-        static let jsonEpisodeAirDateKey = "airdate"
-        static let jsonEpisodeSeasonKey  = "season"
+        static let jsonEpisodeNameKey         = "name"
+        static let jsonEpisodeAirDateKey      = "airdate"
+        static let jsonEpisodeSeasonKey       = "season"
+        static let jsonEpisodeStatusKey       = "status"
+        static let jsonEpisodeKey             = "episode"
+        static let jsonEpisodeLocationKey     = "location"
+        static let jsonEpisodeResourcePathKey = "resource_path"
+        static let jsonEpisodeResourceKey = "resource"
     }
 }

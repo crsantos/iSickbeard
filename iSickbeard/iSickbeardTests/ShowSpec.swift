@@ -16,14 +16,12 @@ class ShowSpec: QuickSpec {
                         name: "name",
                         indexerId: 12314,
                         airs: "Sunday, 8/9Central",
-                        location: "/",
                         quality: QualitySetting.QualitySetting1080pBluRay
                     )
                     
                     expect(show.name).to(equal("name"))
                     expect(show.quality).to(equal(QualitySetting.QualitySetting1080pBluRay))
                     expect(show.indexerId).to(equal(12314))
-                    expect(show.location).to(equal("/"))
                     expect(show.airs).to(equal("Sunday, 8/9Central"))
                 }
                 
@@ -81,7 +79,6 @@ class ShowSpec: QuickSpec {
                     expect(show!.name).to(equal("12 Monkeys"))
                     expect(show!.quality).to(equal(QualitySetting.QualitySettingHD))
                     expect(show!.indexerId).to(equal(272644))
-                    expect(show!.location).to(equal("/downloads/complete/tvshows/12 Monkeys"))
                     expect(show!.airs).to(equal("Friday 9:00 PM"))
                 }
             }

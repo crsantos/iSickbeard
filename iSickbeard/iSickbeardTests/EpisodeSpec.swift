@@ -16,14 +16,15 @@ class EpisodeSpec: QuickSpec {
                         
                         name: "name",
                         seasonNumber: 1,
-                        airDate: NSDate(timeIntervalSinceReferenceDate: 12345)
+                        episodeNumber: 2
                     )
                     
                     episode.updateSubtitles("   EN   ,   PT  , BR,FR")
-                    
+                    episode.airDate = NSDate(timeIntervalSinceReferenceDate: 12345)
                     expect(episode.name).to(equal("name"))
                     expect(episode.seasonNumber).to(equal(1))
-                    expect(episode.airdate).to(equal(NSDate(timeIntervalSinceReferenceDate: 12345)))
+                    expect(episode.episodeNumber).to(equal(2))
+                    expect(episode.airDate).to(equal(NSDate(timeIntervalSinceReferenceDate: 12345)))
                     expect(episode.subtitles.count).to(equal(4))
                     expect(episode.subtitles.first).to(equal("EN"))
                     expect(episode.subtitles.last).to(equal("FR"))
@@ -54,9 +55,10 @@ class EpisodeSpec: QuickSpec {
                     expect(episode!.name).to(equal("Out of Time: Self Portrait"))
                     expect(episode!.quality).to(equal(QualitySetting.QualitySettingNA))
                     expect(episode!.location).to(equal(""))
-                    expect(episode!.airdate).to(equal(Episode.simpleDateFormatter.dateFromString("2015-01-23")))
+                    expect(episode!.airDate).to(equal(Episode.simpleDateFormatter.dateFromString("2015-01-23")))
                     expect(episode!.airs).to(equal(Episode.nextWeekdayDateFormatter.dateFromString("Tuesday, 9:00 PM")))
                     expect(episode!.show!.status).to(equal("Continuing"))
+                    expect(episode!.show!.name).to(equal("12 Monkeys"))
                 }
             }
         }

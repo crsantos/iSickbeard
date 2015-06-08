@@ -9,18 +9,21 @@
 import Foundation
 import SwiftyJSON
 
-class Episode: DictionaryConvertible {
+class Episode: Printable, DictionaryConvertible {
     
     var name:String
     var airs:NSDate?
-    var airdate:NSDate?
+    var airDate:NSDate?
     var file_size:Int           = 0
     var location:String         = ""
     var quality:QualitySetting  = QualitySetting.QualitySettingNA
     var status:EpisodeStatus    = EpisodeStatus.EpisodeStatusNA
     var release_name:String?
+    var resourcePath:String?
+    var resource:String?
     var subtitles:Array<String> = []
     var seasonNumber:Int        = 0
+    var episodeNumber:Int       = 0
     var weekday:Int             = 0
     var show:Show?
     
@@ -40,11 +43,11 @@ class Episode: DictionaryConvertible {
     
     // MARK: - Lifecycle
     
-    init(name:String, seasonNumber:Int, airDate:NSDate) {
+    init(name:String, seasonNumber:Int, episodeNumber:Int) {
 
-        self.name         = name
-        self.airdate      = airDate
-        self.seasonNumber = seasonNumber
+        self.name          = name
+        self.seasonNumber  = seasonNumber
+        self.episodeNumber = episodeNumber
     }
     
     // MARK: - Private
@@ -62,21 +65,36 @@ class Episode: DictionaryConvertible {
     
     class func convertFromDictionary(dictionary: JSON) -> Episode? {
         
-        var airDate:NSDate? // tmp vars
-        var airs:NSDate?    // to save NSDates
-        var airString:String?
-        var season:Int = 0
-        
-        airDate = self.simpleDateFormatter.dateFromString(dictionary[JSONConstants.EpisodeKeys.jsonEpisodeAirDateKey].stringValue)
-        
         var episode = Episode( // create EP object
             
             name: dictionary[JSONConstants.EpisodeKeys.jsonEpisodeNameKey].stringValue,
             seasonNumber: dictionary[JSONConstants.EpisodeKeys.jsonEpisodeSeasonKey].intValue,
-            airDate: airDate!
+            episodeNumber: dictionary[JSONConstants.EpisodeKeys.jsonEpisodeKey].intValue
         )
         
-        episode.airs = self.nextWeekdayDateFormatter.dateFromString(dictionary["airs"].stringValue)
+        episode.location     = dictionary[JSONConstants.EpisodeKeys.jsonEpisodeLocationKey].stringValue
+        episode.resourcePath = dictionary[JSONConstants.EpisodeKeys.jsonEpisodeResourcePathKey].stringValue
+        episode.resource     = dictionary[JSONConstants.EpisodeKeys.jsonEpisodeResourceKey].stringValue
+        
+        if let airDate = self.simpleDateFormatter.dateFromString(dictionary[JSONConstants.EpisodeKeys.jsonEpisodeAirDateKey].stringValue) {
+            
+            episode.airDate = airDate
+        }
+        
+        if let airs = self.nextWeekdayDateFormatter.dateFromString(dictionary["airs"].stringValue){
+            
+            episode.airs = airs
+        }
+        
+        if let status = EpisodeStatus(rawValue:dictionary[JSONConstants.EpisodeKeys.jsonEpisodeStatusKey].stringValue){
+
+            episode.status = status
+        }
+        
+        if let quality = QualitySetting(rawValue:dictionary[JSONConstants.GeneralKeys.jsonQualityKey].stringValue){
+            
+            episode.quality = quality
+        }
         
         let copiedShow = Dictionary<String, AnyObject>.pick(
             dictionary.dictionaryObject!, keys:
@@ -84,7 +102,6 @@ class Episode: DictionaryConvertible {
             JSONConstants.ShowKeys.jsonShowNameKey,
             JSONConstants.ShowKeys.jsonIndexerIdKey,
             JSONConstants.ShowKeys.jsonAirsKey,
-            JSONConstants.ShowKeys.jsonLocationKey,
             JSONConstants.GeneralKeys.jsonQualityKey,
             JSONConstants.ShowKeys.jsonShowStatusKey,
             JSONConstants.ShowKeys.jsonNetworkKey,
@@ -94,8 +111,8 @@ class Episode: DictionaryConvertible {
             JSONConstants.GeneralKeys.jsonTvdbIdKey
         )
         
-        var clonedEpisode = JSON(copiedShow)
-        episode.show = Show.convertFromDictionary(clonedEpisode)
+        var clonedShow = JSON(copiedShow)
+        episode.show = Show.convertFromDictionary(clonedShow)
         
         // TODO: let parse the other missing props
         
@@ -106,6 +123,6 @@ class Episode: DictionaryConvertible {
     
     var description : String {
         
-        return "[Show name: \(self.name), airs: \(self.airs), show: \(self.show)]"
+        return "[Episode name: \(self.name), airs: \(self.airs), show: \(self.show)]"
     }
 }
