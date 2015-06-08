@@ -82,6 +82,30 @@ struct Sickbeard {
         return request
     }
     
+    func History(limit:Int16, completion:(response: Response, episodes: Array<Episode>)->()) -> Request {
+        
+        let request = self.requestBuilder(Sickbeard.Router.History(limit), completionBlock: { (response) -> () in
+            
+            var episodes:Array<Episode> = Array<Episode>()
+            if let data:[JSON] = response.object?[JSONConstants.GeneralKeys.jsonDataKey].arrayValue {
+                
+                var list:Array<JSON> = Array(data)
+                
+                for jsonShow:JSON in list{
+                    
+                    if let episode = Episode.convertFromDictionary(jsonShow){
+                        
+                        episodes.append(episode)
+                    }
+                }
+            }
+            
+            completion(response: response, episodes: episodes)
+        })
+        
+        return request
+    }
+    
     // MARK: - Private methods
     
     func requestBuilder(type: Router, completionBlock:(response: Response)->()) -> Request {
@@ -126,6 +150,7 @@ struct Sickbeard {
         
         case Ping()
         case ShowList()
+        case History(Int16)
         case ShowSeasons(Int64)
         case ShowPoster(Int64)
         
@@ -166,6 +191,10 @@ struct Sickbeard {
                 case .ShowList:
                     
                     return ("shows", [:])
+                    
+                case .History(let limit):
+                    
+                    return ("history", ["limit" : String(limit)])
 
                 case .ShowSeasons(let indexerId):
                     
