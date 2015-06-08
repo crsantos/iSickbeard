@@ -34,7 +34,6 @@ class ViewController: UIViewController {
             name: "Lost",
             indexerId: 12314,
             airs: "Sunday, 8/9Central",
-            location: "/",
             quality: .QualitySettingNA
         )
         debugPrintln(show1);
