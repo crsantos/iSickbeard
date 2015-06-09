@@ -27,6 +27,7 @@
 		DD3FF4361A7EE72700941D39 /* DictionaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF4341A7EE72700941D39 /* DictionaryConvertible.swift */; };
 		DD6331D21A7E4EEA0029E25A /* Sickbeard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6331D11A7E4EEA0029E25A /* Sickbeard.swift */; };
 		DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AD6371A7CD39400477A48 /* QualitySetting.swift */; };
+		DD941D2C1B26448B00031D10 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD941D2B1B26448B00031D10 /* NSBundle.swift */; };
 		DDAFFE981A7C0679003DCCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE961A7C0679003DCCBD /* Main.storyboard */; };
 		DDAFFE9A1A7C0679003DCCBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE991A7C0679003DCCBD /* Images.xcassets */; };
 		DDAFFE9D1A7C0679003DCCBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAFFE9B1A7C0679003DCCBD /* LaunchScreen.xib */; };
@@ -79,6 +80,7 @@
 		DD7114471B073ECE00926EEC /* Pods-iSickbeardTests.appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeardTests.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeardTests/Pods-iSickbeardTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		DD7114491B073F0700926EEC /* Pods-iSickbeard.appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iSickbeard.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-iSickbeard/Pods-iSickbeard.appstore.xcconfig"; sourceTree = "<group>"; };
 		DD7AD6371A7CD39400477A48 /* QualitySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualitySetting.swift; sourceTree = "<group>"; };
+		DD941D2B1B26448B00031D10 /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
 		DDAFFE8D1A7C0679003DCCBD /* iSickbeard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSickbeard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAFFE911A7C0679003DCCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAFFE971A7C0679003DCCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				DD3FF4301A7EE67800941D39 /* String.swift */,
 				DDD4ED091A80329A00746537 /* Dictionary.swift */,
+				DD941D2B1B26448B00031D10 /* NSBundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD941D2C1B26448B00031D10 /* NSBundle.swift in Sources */,
 				DD7AD6381A7CD39400477A48 /* QualitySetting.swift in Sources */,
 				DD3FF4351A7EE72700941D39 /* DictionaryConvertible.swift in Sources */,
 				DDAFFEBB1A7C1268003DCCBD /* ViewController.swift in Sources */,
