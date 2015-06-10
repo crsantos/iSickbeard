@@ -46,6 +46,7 @@
 		DDD4ED0A1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0B1A80329A00746537 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED091A80329A00746537 /* Dictionary.swift */; };
 		DDD4ED0D1A80336700746537 /* DictionaryExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */; };
+		DDF520941B28359300D4E383 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF520921B28355A00D4E383 /* Fabric.framework */; };
 		DDF6C4151B114C30000E698A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6C4141B114C30000E698A /* GlobalConstants.swift */; };
 		DDF6C41A1B11D29B000E698A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6C4141B114C30000E698A /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DDD4ED091A80329A00746537 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		DDD4ED0C1A80336700746537 /* DictionaryExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionSpec.swift; sourceTree = "<group>"; };
+		DDF520921B28355A00D4E383 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DDF6C4141B114C30000E698A /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF520941B28359300D4E383 /* Fabric.framework in Frameworks */,
 				DDB5F7481A7DA23B006F3F3E /* SystemConfiguration.framework in Frameworks */,
 				DD1166D41B25A1B400A8BCF0 /* Crashlytics.framework in Frameworks */,
 				DDB5F7461A7DA234006F3F3E /* Security.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		3EF7455F1AE4CCBE112FB8F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDF520921B28355A00D4E383 /* Fabric.framework */,
 				DD1166D31B25A1B400A8BCF0 /* Crashlytics.framework */,
 				DDB5F7471A7DA23B006F3F3E /* SystemConfiguration.framework */,
 				DDB5F7451A7DA234006F3F3E /* Security.framework */,
@@ -672,6 +676,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/carlossantos/dev/stepz,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -794,6 +799,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/carlossantos/dev/stepz,
 				);
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -813,6 +819,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/carlossantos/dev/stepz,
 				);
 				INFOPLIST_FILE = iSickbeard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
