@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "AppStore">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DDAFFEA11A7C067A003DCCBD"
+               BuildableName = "iSickbeardTests.xctest"
+               BlueprintName = "iSickbeardTests"
+               ReferencedContainer = "container:iSickbeard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
