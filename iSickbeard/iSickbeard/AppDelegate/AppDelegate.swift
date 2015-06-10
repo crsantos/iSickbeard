@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Fabric
 import Crashlytics
 
 @UIApplicationMain
@@ -49,8 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupCrashlyticsBoilerplate() {
 
-        // Debug
-        Crashlytics.startWithAPIKey("47dde6c42d4c92a972cc244b76a9249bbda4e76d")
+        Fabric.with([Crashlytics()])
     }
 }
 

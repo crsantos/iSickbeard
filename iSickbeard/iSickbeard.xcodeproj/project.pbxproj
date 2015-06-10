@@ -538,7 +538,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 47dde6c42d4c92a972cc244b76a9249bbda4e76d e666f492214fe31053193d887b4f028e7511522666084f9e9a03cbc27e84f908";
+			shellScript = "./Fabric.framework/run 47dde6c42d4c92a972cc244b76a9249bbda4e76d e666f492214fe31053193d887b4f028e7511522666084f9e9a03cbc27e84f908";
 		};
 		DD856D6F1B15ED2600529441 /* Bump GREENHOUSECI Version */ = {
 			isa = PBXShellScriptBuildPhase;
