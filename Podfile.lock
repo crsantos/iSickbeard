@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (1.2.0)
+  - Jibber-Framework (1.3.8)
   - Nimble (0.4.2)
   - PrintlnMagic (1.2.1)
   - Quick (0.3.1)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 1.2)
+  - Jibber-Framework (~> 1.3)
   - Nimble (= 0.4.2)
   - PrintlnMagic (= 1.2.1)
   - Quick (= 0.3.1)
@@ -16,6 +18,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: d765c5c1713aa64106b0228aaa600a1e6851f68d
+  Jibber-Framework: 7b663821dafa675b0f87ebea0becf02ae9043c24
   Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
   PrintlnMagic: c0a6bcf79a35d215b8abea62facad33836bbaeb2
   Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35

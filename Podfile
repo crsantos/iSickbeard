@@ -12,6 +12,7 @@ target :iSickbeard do
   pod 'PrintlnMagic', '1.2.1'
   pod 'SwiftyJSON', '~> 2.2'
   pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+  pod 'Jibber-Framework', '~> 1.3', :configurations => ['Debug']
 end
 
 target :iSickbeardTests, :exclusive => true do
