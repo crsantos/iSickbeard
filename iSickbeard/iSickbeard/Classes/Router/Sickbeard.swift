@@ -15,7 +15,7 @@ public enum Status {
     case Failure
 }
 
-public class Response {
+public struct Response {
 
     public var status: Status  = .Failure
     public var object: JSON?   = nil
