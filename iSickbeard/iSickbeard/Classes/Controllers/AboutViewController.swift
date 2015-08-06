@@ -10,11 +10,15 @@ import UIKit
 import Alamofire
 
 class AboutViewController: UIViewController {
-
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var buildLabel: UILabel!
     @IBOutlet weak var aboutTextView: UITextView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         
@@ -58,6 +62,7 @@ class AboutViewController: UIViewController {
         )
         debugPrintln(show1);
         
+        self.activityIndicator.startAnimating()
         // Test Ping
         let request = Sickbeard(server: server2).History(3) { (response, shows) -> () in
             
@@ -66,12 +71,13 @@ class AboutViewController: UIViewController {
                 println(shows)
                 self.aboutTextView.text = shows.description
             }
+            self.activityIndicator.stopAnimating()
         }
         
         println(request)
     }
     
-    // MARK: - Lifecycle
+    // MARK: - Memory
     
     override func didReceiveMemoryWarning() {
         

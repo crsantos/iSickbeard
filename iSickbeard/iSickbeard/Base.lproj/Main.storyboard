@@ -53,17 +53,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="82B-HO-Fuh">
+                                <rect key="frame" x="16" y="104" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="f30-dI-ZQk"/>
+                                    <constraint firstAttribute="height" constant="20" id="w5q-ss-1c5"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="82B-HO-Fuh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="2wA-he-Cl3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LYm-TG-Xgi" secondAttribute="trailing" constant="152" id="30L-vc-EDa"/>
+                            <constraint firstItem="LYm-TG-Xgi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="82B-HO-Fuh" secondAttribute="trailing" constant="10" id="8bV-0C-XLn"/>
                             <constraint firstItem="LYm-TG-Xgi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="169" id="8dT-VQ-77o"/>
                             <constraint firstItem="9pH-Nx-ict" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AO3-JG-ftJ"/>
                             <constraint firstAttribute="centerX" secondItem="LYm-TG-Xgi" secondAttribute="centerX" constant="-0.5" id="BtR-lj-eAn"/>
                             <constraint firstItem="9pH-Nx-ict" firstAttribute="top" secondItem="LYm-TG-Xgi" secondAttribute="bottom" constant="20" id="Ipr-17-62r"/>
+                            <constraint firstItem="82B-HO-Fuh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K9N-pO-Xxj"/>
                             <constraint firstAttribute="centerX" secondItem="9pH-Nx-ict" secondAttribute="centerX" id="LnL-zR-5dU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9pH-Nx-ict" secondAttribute="bottom" constant="20" id="MVd-0f-Y2R"/>
                             <constraint firstItem="9pH-Nx-ict" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QVB-f4-zCn"/>
+                            <constraint firstItem="LYm-TG-Xgi" firstAttribute="leading" secondItem="82B-HO-Fuh" secondAttribute="trailing" constant="133" id="TF8-l6-W2H"/>
                             <constraint firstItem="LYm-TG-Xgi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="Wtc-Iu-UgY"/>
                             <constraint firstItem="LYm-TG-Xgi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="dZx-2c-JFY"/>
                             <constraint firstItem="9pH-Nx-ict" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hEk-0K-waa"/>
@@ -76,6 +87,7 @@
                                 <exclude reference="QVB-f4-zCn"/>
                                 <exclude reference="30L-vc-EDa"/>
                                 <exclude reference="8dT-VQ-77o"/>
+                                <exclude reference="TF8-l6-W2H"/>
                                 <exclude reference="Wtc-Iu-UgY"/>
                                 <exclude reference="dZx-2c-JFY"/>
                                 <exclude reference="ixc-5K-w5O"/>
@@ -86,6 +98,7 @@
                     <navigationItem key="navigationItem" title="iSickbeard" id="6b2-ZC-UBA"/>
                     <connections>
                         <outlet property="aboutTextView" destination="9pH-Nx-ict" id="0AM-7L-Lsr"/>
+                        <outlet property="activityIndicator" destination="82B-HO-Fuh" id="hkV-ue-Zcg"/>
                         <outlet property="buildLabel" destination="dEm-9B-VF8" id="Cmy-0e-hdb"/>
                         <outlet property="versionLabel" destination="wbR-ia-euM" id="M1O-CX-uKV"/>
                     </connections>
