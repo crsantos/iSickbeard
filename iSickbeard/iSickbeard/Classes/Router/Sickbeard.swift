@@ -151,7 +151,7 @@ struct Sickbeard {
         case Ping()
         case ShowList()
         case History(Int16)
-        case ShowSeasons(Int64)
+        case ShowEpisodesForSeason(Int64)
         case ShowPoster(Int64)
         
         
@@ -196,7 +196,7 @@ struct Sickbeard {
                     
                     return ("history", ["limit" : String(limit)])
 
-                case .ShowSeasons(let indexerId):
+                case .ShowEpisodesForSeason(let indexerId):
                     
                     return ("show.seasons", ["indexerid" : String(indexerId)])
                     
