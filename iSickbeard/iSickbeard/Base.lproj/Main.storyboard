@@ -85,6 +85,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="iSickbeard" id="6b2-ZC-UBA"/>
                     <connections>
+                        <outlet property="aboutTextView" destination="9pH-Nx-ict" id="0AM-7L-Lsr"/>
                         <outlet property="buildLabel" destination="dEm-9B-VF8" id="Cmy-0e-hdb"/>
                         <outlet property="versionLabel" destination="wbR-ia-euM" id="M1O-CX-uKV"/>
                     </connections>

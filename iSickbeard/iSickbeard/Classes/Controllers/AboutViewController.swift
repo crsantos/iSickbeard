@@ -14,7 +14,7 @@ class AboutViewController: UIViewController {
     
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var buildLabel: UILabel!
-    
+    @IBOutlet weak var aboutTextView: UITextView!
     
     override func viewDidLoad() {
         
@@ -64,6 +64,7 @@ class AboutViewController: UIViewController {
             if response.status == .Success {
                 
                 println(shows)
+                self.aboutTextView.text = shows.description
             }
         }
         
