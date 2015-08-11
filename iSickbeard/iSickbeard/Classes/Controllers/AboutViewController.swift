@@ -48,7 +48,7 @@ class AboutViewController: UIViewController {
         
         let server2 = Server(
             name: "Sickbeard2",
-            address: "http://crsantos.ddns.net:8081",
+            address: "http://192.168.1.71:8081",
             apiKey:"0e1441393aa482f300ca0553991a8fc4"
         );
         
