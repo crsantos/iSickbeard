@@ -685,7 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DADHOC $(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "78181996-17EF-4A1F-A804-76B12372EDD9";
+				PROVISIONING_PROFILE = "063a761d-3911-4b16-b0e3-13ab0ec8345d";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = AdHoc;
